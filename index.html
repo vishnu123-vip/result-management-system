@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Vishnu College - Result Portal</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <style>
+    :root {
+      --primary-color: #6366f1;
+      --secondary-color: #4f46e5;
+      --accent-color: #f59e0b;
+      --dark-bg: rgba(17, 24, 39, 0.95);
+      --glass-bg: rgba(255, 255, 255, 0.08);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      min-height: 100vh;
+      background:
+        linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+        url('./image1.jpg') no-repeat center center/cover;
+      color: white;
+    }
+
+    /* NAVBAR */
+    .navbar {
+      background: var(--dark-bg);
+      padding: 1rem;
+      position: sticky;
+      top: 0;
+    }
+
+    .nav-links {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+    }
+
+    .nav-link {
+      color: white;
+      text-decoration: none;
+      padding: 0.5rem 1rem;
+      border-radius: 8px;
+      transition: 0.3s;
+    }
+
+    .nav-link:hover {
+      background: var(--glass-bg);
+    }
+
+    /* HERO */
+    .hero {
+      text-align: center;
+      padding: 4rem 1rem;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      background: linear-gradient(to right, #f59e0b, #ec4899);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .hero p {
+      margin-top: 1rem;
+      opacity: 0.9;
+    }
+
+    /* CONTENT */
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 2rem;
+    }
+
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+
+    .card {
+      background: var(--glass-bg);
+      padding: 2rem;
+      border-radius: 15px;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .icon {
+      font-size: 2rem;
+      color: var(--accent-color);
+    }
+
+    /* STATS */
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1.5rem;
+      margin-top: 3rem;
+    }
+
+    .stat-card {
+      background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+      padding: 2rem;
+      border-radius: 15px;
+      text-align: center;
+    }
+
+    .stat-number {
+      font-size: 2.5rem;
+      font-weight: 600;
+    }
+
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 2.2rem;
+      }
+      .nav-links {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="nav-links">
+      <a href="admin.html" class="nav-link"><i class="fas fa-user-shield"></i> Admin</a>
+      <a href="teacher.html" class="nav-link"><i class="fas fa-chalkboard-teacher"></i> Teacher</a>
+      <a href="student.html" class="nav-link"><i class="fas fa-user-graduate"></i> Student</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <h1>Vishnu College Result Portal</h1>
+    <p>Empowering Academic Excellence Through Technology</p>
+  </section>
+
+  <!-- CONTENT -->
+  <div class="container">
+    <div class="card-grid">
+      <div class="card">
+        <h2><i class="icon fas fa-university"></i> About Us</h2>
+        <p>World-class education with modern technology and innovation.</p>
+      </div>
+
+      <div class="card">
+        <h2><i class="icon fas fa-graduation-cap"></i> Programs</h2>
+        <p>50+ UG & PG programs across Engineering, Arts and Science.</p>
+      </div>
+
+      <div class="card">
+        <h2><i class="icon fas fa-users"></i> Community</h2>
+        <p>5000+ students and 200+ faculty members.</p>
+      </div>
+    </div>
+
+    <div class="stats">
+      <div class="stat-card">
+        <div class="stat-number">5000+</div>
+        <p>Students</p>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number">50+</div>
+        <p>Courses</p>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number">200+</div>
+        <p>Faculty</p>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
